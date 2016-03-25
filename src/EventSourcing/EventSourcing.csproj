@@ -101,6 +101,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\Bootstrap.cs" />
+    <Compile Include="Contracts\Dtos\AssignPmToProjectReq.cs" />
+    <Compile Include="Contracts\Events\PmToProjectAssigned.cs" />
     <Compile Include="Infrastructure\GesRepository.cs" />
     <Compile Include="Infrastructure\ExtendsEvent.cs" />
     <Compile Include="App_Start\IoC.cs" />
