@@ -20,5 +20,5 @@ To run GES open a command prompt and navigate to the folder where you installed 
 EventStore.ClusterNode.exe --db [your-data-folder]
 ```
 where `[your-data-folder]` is any folder where you want GES to store its data.
-Open a browser and navigate to http://localhost:2113/ to admin GES. You need to enter you credentials admin/changeit to access the dashboard.
+Open a browser and navigate to http://localhost:2113/web to admin GES. You need to enter you credentials admin/changeit to access the dashboard.
 I have added a batch file `RunEventStore.cmd` to the repository which you can use instead.
