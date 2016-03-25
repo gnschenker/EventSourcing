@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventSourcing", "EventSourcing\EventSourcing.csproj", "{B043BA9C-1C2F-4D8B-89FE-A9A5FBFAF684}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadModelBuilder", "ReadModelBuilder\ReadModelBuilder.csproj", "{F8392F20-B58D-48D7-9962-31B8111366DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventSourcing.Core", "Core\EventSourcing.Core.csproj", "{89452827-10E9-4188-A587-7865B0C3B59C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{B043BA9C-1C2F-4D8B-89FE-A9A5FBFAF684}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B043BA9C-1C2F-4D8B-89FE-A9A5FBFAF684}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B043BA9C-1C2F-4D8B-89FE-A9A5FBFAF684}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8392F20-B58D-48D7-9962-31B8111366DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8392F20-B58D-48D7-9962-31B8111366DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8392F20-B58D-48D7-9962-31B8111366DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8392F20-B58D-48D7-9962-31B8111366DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89452827-10E9-4188-A587-7865B0C3B59C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89452827-10E9-4188-A587-7865B0C3B59C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89452827-10E9-4188-A587-7865B0C3B59C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89452827-10E9-4188-A587-7865B0C3B59C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

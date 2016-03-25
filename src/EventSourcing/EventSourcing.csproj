@@ -102,13 +102,10 @@
   <ItemGroup>
     <Compile Include="App_Start\Bootstrap.cs" />
     <Compile Include="Contracts\Dtos\AssignPmToProjectReq.cs" />
-    <Compile Include="Contracts\Events\PmToProjectAssigned.cs" />
     <Compile Include="Infrastructure\GesRepository.cs" />
     <Compile Include="Infrastructure\ExtendsEvent.cs" />
     <Compile Include="App_Start\IoC.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Contracts\Events\IEvent.cs" />
-    <Compile Include="Contracts\Events\ProjectAdded.cs" />
     <Compile Include="Contracts\Dtos\Project.cs" />
     <Compile Include="Contracts\IRepository.cs" />
     <Compile Include="Contracts\Dtos\AddProjectReq.cs" />
@@ -120,6 +117,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\EventSourcing.Core.csproj">
+      <Project>{89452827-10e9-4188-a587-7865b0c3b59c}</Project>
+      <Name>EventSourcing.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
