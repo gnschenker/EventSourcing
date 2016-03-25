@@ -8,6 +8,7 @@ namespace EventSourcing
         protected void Application_Start()
         {
             GlobalConfiguration.Configure(WebApiConfig.Register);
+            Bootstrap.Init();
         }
     }
 }
