@@ -35,9 +35,4 @@ namespace EventSourcing.Controllers
             return id;
         }
     }
-
-    public class AddProjectReq
-    {
-        public string Name { get; set; }
-    }
 }

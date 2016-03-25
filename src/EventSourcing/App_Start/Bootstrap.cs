@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using EventSourcing.Contracts;
-using EventSourcing.Contracts.Events;
+﻿using System.Net;
+using EventSourcing.Infrastructure;
+using EventStore.ClientAPI;
 
 namespace EventSourcing
 {
@@ -9,15 +8,17 @@ namespace EventSourcing
     {
         public static void Init()
         {
-            IoC.GesRepository = new RepositoryMock();
+            var connection = GetEventStoreConnection();
+            IoC.GesRepository = new GesRepository(connection);
         }
-    }
 
-    public class RepositoryMock : IRepository
-    {
-        public void Save(Guid id, IEnumerable<IEvent> events)
+        private static IEventStoreConnection GetEventStoreConnection()
         {
-            //do nothing
+            var ipAddress = IPAddress.Parse("127.0.0.1");
+            var endpoint = new IPEndPoint(ipAddress, 1113);
+            var connection = EventStoreConnection.Create(endpoint);
+            connection.ConnectAsync().Wait();
+            return connection;
         }
     }
 }
