@@ -101,12 +101,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\Bootstrap.cs" />
+    <Compile Include="Infrastructure\GesRepository.cs" />
+    <Compile Include="Infrastructure\ExtendsEvent.cs" />
     <Compile Include="App_Start\IoC.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Contracts\Events\IEvent.cs" />
     <Compile Include="Contracts\Events\ProjectAdded.cs" />
     <Compile Include="Contracts\Dtos\Project.cs" />
     <Compile Include="Contracts\IRepository.cs" />
+    <Compile Include="Contracts\Dtos\AddProjectReq.cs" />
     <Compile Include="Controllers\ProjectsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
