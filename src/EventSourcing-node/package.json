@@ -1,0 +1,17 @@
+{
+  "name": "eventsourcing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gabriel Schenker",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "geteventstore-promise": "^1.1.1",
+    "node-uuid": "^1.4.7"
+  }
+}
