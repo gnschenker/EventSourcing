@@ -26,10 +26,9 @@ Body:    {"name": "some project name"}
 To assing a PM to an existing project
 ```
 [POST] 
-URI:     localhost:[port]/api/projects/pm
+URI:     localhost:[port]/api/projects/{projectId}/pm
 Header:  Content-Type: application/json
 Body:    {
-	        "projectId": "[id of the project (GUID)]",
 			"staffId": "[id of the PM (GUID)]"
 		 }
 ```

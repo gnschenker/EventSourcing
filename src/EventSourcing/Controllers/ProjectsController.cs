@@ -35,15 +35,15 @@ namespace EventSourcing.Controllers
             return id;
         }
 
-        [Route("pm"), HttpPost]
-        public void AssignPm(AssignPmToProjectReq req)
+        [Route("{id}/pm"), HttpPost]
+        public void AssignPm(Guid id, AssignPmToProjectReq req)
         {
             var e = new PmToProjectAssigned
             {
-                Id = req.ProjectId,
+                Id = id,
                 PmId = req.StaffId
             };
-            _repository.Save(req.ProjectId, new [] {e});
+            _repository.Save(id, new [] {e});
         }
     }
 }
