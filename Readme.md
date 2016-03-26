@@ -49,3 +49,6 @@ I have added a batch file `RunEventStore.cmd` to the repository which you can us
 In this sample we are using Mongo DB to store our read model. But any other relational or non-relational DB can be used to store the read model. You decide what DB suits your needs best.
 The Mongo DB binaries are also part of this repository. To run Mongo DB we need to at least define a logging and a data directory. This is done in the Powershell script `RunMongoDb.ps1`. When executing the script a config file for Mongo DB is created and the DB is started as a background service.
 To work with Mongo DB we recommend *Mongo Vue*. This tool is free to use and can be downloaded form [here](http://www.mongovue.com/).
+
+#Tinkering with Node JS
+I implemented the same API using node JS with express JS. This sample uses a node module that uses the HTTP protocol to access GES. The sample is located in the `src/EventSourcing-node` folder. All the logic is implemented in the `server.js` file.
