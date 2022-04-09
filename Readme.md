@@ -2,7 +2,6 @@
 This repository is accompanying the workshop about Event Sourcing. It contains all instructions needed to get going and also a working sample application.
 The application is implemented in .NET and consists of a Web API who generates events that are then stored in the event store. It contains also a simple command line application that shows how a read model can be built from the events stored in the event store
 We are using GetEventStore as the event store and Mongo DB to store the read model. The necessary binaries to run GetEventStore and Mongo DB are included in this repo.
-
 # Event Sourcing
 A client (e.g. Web UI) sends a request to the backend to create or modify some data.
 The backend either accepts the request or it rejects it. If the request is accepted then data is modified.
